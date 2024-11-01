@@ -42,9 +42,10 @@ public class Main {
             _instructions = instructions;
             _ingredients = ingredients;
         }
-        public void addIngredient(){
-
+        public void addIngredient(T ingredient){
+            _ingredients.add(ingredient);
         }
+
     }
     public static void main(String[] args) {
 
