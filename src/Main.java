@@ -8,30 +8,30 @@ interface Ingredient{
 }
 class SolidIngredient implements Ingredient{
     private String _ingredientName;
-    private double _ingredientQuantity;
+    private double _quantityGrams;
     public SolidIngredient(String name, double quantity){
         _ingredientName = name;
-        _ingredientQuantity = quantity;
+        _quantityGrams = quantity;
     }
     public String getName(){
         return _ingredientName;
     }
     public double getQuantity(){
-        return _ingredientQuantity;
+        return _quantityGrams;
     }
 }
 class LiquidIngredient implements Ingredient{
     private String _ingredientName;
-    private double _ingredientQuantity;
+    private double _quantitymL;
     public LiquidIngredient(String name, double quantity){
         _ingredientName = name;
-        _ingredientQuantity = quantity;
+        _quantitymL = quantity;
     }
     public String getName(){
         return _ingredientName;
     }
     public double getQuantity(){
-        return _ingredientQuantity;
+        return _quantitymL;
     }
 }
 //    extends and not implements
